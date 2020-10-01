@@ -1,0 +1,223 @@
+:root{
+font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: 333;
+}
+
+body{
+    animation: backgroundchange 25s linear infinite;
+}
+
+h1,
+h2,
+h3,
+h4{
+    margin-bottom: 1rem;
+    color: ivory;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    animation-duration: 3s;
+    animation-name: appeartomove;
+    animation-iteration-count: initial;
+    
+}
+
+h1 > span{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h1:after
+{
+    content:' ';
+    display:block;
+    border:2px solid white;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*UTILTIES*/
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-centre{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-centre{
+    justify-content: center;
+}
+
+.text-centre{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/*BUTTTONS*/
+.btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;    
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 wheat;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    border-color: wheat;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/*FORMS*/
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder{
+    color: #aaa;
+}
+
+/*Animations*/
+@keyframes appeartomove{
+    0% {
+        margin-left: 0%;
+      }
+      50% {
+        margin-left: 300px;
+      }
+      100% {
+        margin-left: 0%;
+      }
+}
+
+@keyframes backgroundchange{
+    0%, 100% {
+        background-color: skyblue;
+    }
+    33% {
+        background-color: violet;
+    }
+    66% {
+        background-color: purple;
+    }
+}
+
+/*Images*/
+img{
+    animation-duration: 3s;
+    animation-name: appeartomove;
+    animation-iteration-count: initial;
+}
+
+/*NewsReel*/
+.nrcontainer{
+    width: 100%;
+    overflow: hidden;
+}
+
+.nr-wrap {
+  width: 100%;
+  padding-left: 100%;
+  background-color: red;
+}
+
+@keyframes newsreel {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+.nr-move {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: newsreel;
+  animation-duration: 10s;
+}
+.nr-move:hover{
+  animation-play-state: paused;
+}
+
+.nr-item{
+  display: inline-block;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .nr-move { animation-duration: 20s; }
+  }
