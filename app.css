@@ -17,7 +17,8 @@ body{
 h1,
 h2,
 h3,
-h4{
+h4,
+h5{
     margin-bottom: 1rem;
     color: ivory;
 }
@@ -32,7 +33,7 @@ h1{
 }
 
 h1 > span{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
 }
 
@@ -44,19 +45,23 @@ h1:after
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 h4{
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 600;
     font-style: italic;
+}
+h5{
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /*UTILTIES*/
@@ -167,7 +172,7 @@ input::placeholder{
 
 @keyframes backgroundchange{
     0%, 100% {
-        background-color: skyblue;
+        background-color: limegreen;
     }
     33% {
         background-color: violet;
@@ -177,12 +182,12 @@ input::placeholder{
     }
 }
 
-/*Images*/
+/*Images/
 img{
     animation-duration: 3s;
     animation-name: appeartomove;
     animation-iteration-count: initial;
-}
+}*/
 
 /*NewsReel*/
 .nrcontainer{
@@ -218,6 +223,22 @@ img{
   padding: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 100rem) {
     .nr-move { animation-duration: 20s; }
   }
+
+.myTable { widows: 1000rem;;background-color:ivory;border-collapse:collapse;color:#000;font-size: 1.5rem; }
+.myTable th { background-color: grey;color:white;width:20%;font-variant:small-caps; }
+.myTable td, .myTable th { padding:1rem;border:0; }
+.myTable td { font-family:Georgia, Garamond, serif; border: bottom 2rem solid black;height:5rem; }
+
+.myOtherTable { widows: 500rem;;;border-collapse:collapse;color: ivory;font-size: 1.5rem; }
+.myOtherTable th { background-color: grey;width:10%;font-variant:small-caps; }
+.myOtherTable td, .myOtherTable th { padding:0.5rem;border:0; }
+.myOtherTable td { font-family:Georgia, Garamond, serif; border: bottom 2rem solid black;height:5rem; }
+
+
+.myOtherTable2 { widows: 500rem;;;border-collapse:collapse;color: ivory;font-size: 1.5rem; }
+.myOtherTable2 th { ;width:20%;font-variant:small-caps; }
+.myOtherTable2 td, .myOtherTable2 th { padding:1rem;border:0; }
+.myOtherTable2 td { font-family:Georgia, Garamond, serif; border: bottom 2rem solid black;height:3rem; }
