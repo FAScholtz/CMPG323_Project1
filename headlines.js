@@ -1,4 +1,6 @@
 const title = document.getElementById('title');
+const loader = document.getElementById('loader');
+const container = document.getElementById('container');
 
 let currentTitle = {};
 let titleCounter = 0;
@@ -20,8 +22,10 @@ fetch(
                 title: loadedTitle.title,
             }
             return formattedTitle;
-        });
-        startGame();
+        });                
+        container.classList.remove("hidden");
+        loader.classList.add("hidden");
+        startGame();        
     })
     .catch((err)=>{
         console.error(err);
@@ -39,6 +43,5 @@ getNewQuestion = () => {
         title.innerText = title.innerText+ "***" + currentTitle.title;
         titleCounter++;
     }   
-    }
-
+}       
 startGame();
