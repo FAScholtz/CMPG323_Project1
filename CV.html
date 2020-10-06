@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="app.css"/> <!--This sets the style sheet for the page-->
 </head>
-<body>
+<body>    <!--This creates the top of the website with page name and buttons-->
     <div>
         <div id = "CV" class="flex-centre flex-column">
             <h1 style="margin-top: 100px;">Curriculum Vitae</h1>
@@ -16,81 +16,86 @@
             <a class="btn" href="Projects.html">Projects</a>
             <a class="btn" href="IT.html">IT Experience</a>
             <a class="btn" href="CV.html">Curriculum Vitae</a>
+            <a class="btn" href="contactme.html">Contact me</a>
         </div>        
-        <div> 
+        <div>    <!--This displays and underlines the information on the page-->
             <u style="color: ivory;"><h3 style="margin-left: 25rem; margin-right: 25rem;">A brief summary of me</h3></u>
             <h4 style="margin-left: 25rem; margin-right: 25rem;">
-                <p>For yur perusal summary of my CV has been added below. For a comprehensive copy follow the link: <span title = "Open my CV" style="background-color: salmon;"><a href="/CMPG323_Project1/Curriculum Vitae.pdf">My CV</a></span></p>
+                <p>For your perusal summary of my CV has been added below. For a comprehensive copy follow 
+                    the link: <span title = "Open my CV"><a href="/CMPG323_Project1/Curriculum Vitae.pdf">my CV</a></span></p>
             </h4>               
-        </div>   
-        <details class="details">
-            <summary><h4 style="text-align: center; background-color: grey">Personal Details</h4></summary>
-            <ul>                
-                <table class="myOtherTable2" style="margin-left: 50rem; margin-right: 50rem">
-                    <tr>
-                    <th></th><th></th>
-                    <tr>
-                    <td>Names</td><td>Francois Andre Scholtz</td>s
-                    <tr>
-                    <td>Location</td><td>Potchefstroom, North-West, ZA</td>
-                    <tr>
-                    <td>Contact number</td><td>+27 83 244 3825</td>
-                    <tr>
-                    <td>email</td><td>fascholtz1982@gmail.com</td>
-                    <tr>
-                    <td>Linked in</td><td>francois-scholtz-64597834</td>
-                    </tr>
-                    </table>
-            </ul>
-        </details><details class="details">
-            <summary><h4 style="text-align: center; background-color: grey">Educational Details</h4></summary>
-            <ul>                
-                <table class="myOtherTable2" style="margin-left: 50rem; margin-right: 50rem">
-                    <tr>
-                    <th></th><th></th>
-                    <tr>
-                    <td style="background-color: royalblue;">royalblue</td><td style="background-color: royalblue;">North West University</td>
-                    <tr>
-                    <td>Qualification</td><td>Bachelor of Science</td>
-                    <tr>
-                    <td>Course of study</td><td>Information Technology</td>
-                    <tr>
-                    <td>Achievements</td><td>GPA: 3.15 (2nd year), Golden Key Internation Honours Socirety</td>
-                    </tr>
-                    <td style="background-color: royalblue;">Institiution</td><td style="background-color: royalblue;">Energy Trading Foundation</td>
-                    <tr>
-                    <td>Qualification</td><td>Certificate</td>
-                    <tr>
-                    <td>Course of study</td><td>Introduction to Energy Managerment</td>
-                    </tr>
-                    <td style="background-color: royalblue;">Institiution</td><td style="background-color: royalblue;">Energy Centre of Excellence</td>
-                    <tr>
-                    <td>Qualification</td><td>Certificate</td>
-                    <tr>
-                    <td>Course of study</td><td>Introduction to Project Managerment</td>
-                    </tr>
-                    </tr>
-                    </table>
-            </ul>
-        </details><details class="details">
-            <summary><h4 style="text-align: center; background-color: grey">Work Experience</h4></summary>
-            <ul>                
-                <table class="myOtherTable2" style="margin-left: 50rem; margin-right: 50rem">
-                    <tr>
-                    <th></th><th></th>
-                    <tr>
-                    <td style="background-color: royalblue;">Company</td><td style="background-color: royalblue;">Eskom Holdings SOC Limited</td>
-                    <tr>
-                    <td>Employment Period</td><td>09/2001 to Date</td>
-                    <tr>
-                    <td>Current Position</td><td>Energy Trading Officer</td>
-                    </tr>
-                    <td>Current Position</td><td>Key Customer Relations Officer, Customer Acquisitions Officer, Customer Service 
-                        Assistant Officer, Customer Advisor, Contact Centre Service Agent</td>
-                    </tr>
-                    </tr>
-                    </table>
-            </ul>
-        </details>
+        </div>   <!--Thus creates a colapsable summary ro contact the summary of my CV-->
+        <div style="margin-left: 25rem; margin-right: 25rem">
+            <details class="details" >
+                <summary><h4 style="text-align: center; background-color: grey">Personal Details</h4></summary>
+                <ul>                
+                    <table class="cvTable" style="margin-left: 30rem;">    <!--This creates a table with information-->
+                        <tr>
+                        <th></th><th></th>
+                        <tr>
+                        <td>Names</td><td>Francois Andre Scholtz</td>s
+                        <tr>
+                        <td>Location</td><td>Potchefstroom, North-West, ZA</td>
+                        <tr>
+                        <td>Contact number</td><td>+27 83 244 3825</td>
+                        <tr>
+                        <td>email</td><td>fascholtz1982@gmail.com</td>
+                        <tr>
+                        <td>Linked in</td><td>francois-scholtz-64597834</td>
+                        </tr>
+                        </table>
+                </ul>
+            </details><details class="details">
+                <summary><h4 style="text-align: center; background-color: grey">Educational Details</h4></summary>
+                <ul>                
+                    <table class="cvTable" style="margin-left: 30rem;  margin-right: 15rem"> <!--This creates a table with information-->
+                        <tr>
+                        <th></th><th></th>
+                        <tr>
+                        <td style="background-color: royalblue;">Institiution</td><td style="background-color: royalblue;">North West University</td>
+                        <tr>
+                        <td>Qualification</td><td>Bachelor of Science</td>
+                        <tr>
+                        <td>Course of study</td><td>Information Technology</td>
+                        <tr>
+                        <td>Achievements</td><td>GPA: 3.15 (2nd year), Golden Key Internation Honours Socirety</td>
+                        </tr>
+                        <td style="background-color: royalblue;">Institiution</td><td style="background-color: royalblue;">Energy Trading Foundation</td>
+                        <tr>
+                        <td>Qualification</td><td>Certificate</td>
+                        <tr>
+                        <td>Course of study</td><td>Introduction to Energy Managerment</td>
+                        </tr>
+                        <td style="background-color: royalblue;">Institiution</td><td style="background-color: royalblue;">Energy Centre of Excellence</td>
+                        <tr>
+                        <td>Qualification</td><td>Certificate</td>
+                        <tr>
+                        <td>Course of study</td><td>Introduction to Project Managerment</td>
+                        </tr>
+                        </tr>
+                        </table>
+                </ul>
+            </details><details class="details">
+                <summary><h4 style="text-align: center; background-color: grey">Work Experience</h4></summary>
+                <ul>                
+                    <table class="experienceTable" style="margin-left: 30rem; margin-right: 15rem;"> <!--This creates a table with information-->
+                        <tr>
+                        <th></th><th></th>
+                        <tr>
+                        <td style="background-color: royalblue;">Company</td><td style="background-color: royalblue;">Eskom Holdings SOC Limited</td>
+                        <tr>
+                        <td>Employment Period</td><td>09/2001 to Date</td>
+                        <tr>
+                        <td>Current Position</td><td>Energy Trading Officer</td>
+                        </tr>
+                        <td>Current Position</td><td>Key Customer Relations Officer, Customer Acquisitions Officer, Customer Service 
+                            Assistant Officer, Customer Advisor, Contact Centre Service Agent</td>
+                        </tr>
+                        </tr>
+                        </table>
+                </ul>
+            </details>
+        </div>        
+    </div>  
 </body>
 </html>

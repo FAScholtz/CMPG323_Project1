@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<img>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="app.css"/> <!--This sets the style sheet for the page-->
+</head>
+<body>    <!--This creates the top of the website with page name and buttons-->
+    <div id = "contact" class="flex-centre flex-column">
+            <h1 style="margin-top: 100px;">Contact Me</h1>
+        <div id = "homebtn"class = "flex-centre flex-row">
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="Projects.html">Projects</a>
+            <a class="btn" href="IT.html">IT Experience</a>
+            <a class="btn" href="CV.html">Curriculum Vitae</a>
+            <a class="btn" href="contactme.html">Contact me</a>
+        </div>
+        <div>   <!--This displays and underlines the information on the page-->
+        <u style="color:ivory;"><h3 style="margin-left: 25rem; margin-right: 25rem;">Contact me</h3></u>
+        <p style="text-align: center;"><h4 style="margin-left: 25rem; margin-right: 25rem;">Please click 
+            the following button below to send me an email if you need to contact me.
+        </h4></p>
+        <p> </p>
+        <p style="text-align: center;"><h4 style="margin-left: 25rem; margin-right: 25rem;">To express my
+            love for soccer I have included some highlights from recent games, enjoy.
+        </h4></p>
+        <!--This created the button that will call up the visitors email application to send me a message-->
+        <div class = "btn" href="javascript: void(0)" onclick="location.href='mailto:fascholtz1982@gmail.com'"
+        style="margin-left: 63rem; font-weight: 800;">Contact me</button></div>
+    </div>
+    <!--This creates a from to play a video the source of the video is receive via the JavaScript file-->
+    <div>
+        <iframe id = "video" frameborder="1" width="100%" height="100%" allowfullscreen>
+        </iframe>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>

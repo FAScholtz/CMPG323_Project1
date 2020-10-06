@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Experience</title>
-    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="app.css"/> <!--This sets the style sheet for the page-->
 </head>
-<body>
+<body>    <!--This creates the top of the website with page name and buttons-->
     <div>
         <div id = "IT" class="flex-centre flex-column">
             <h1 style="margin-top: 100px;">IT Experience</h1>
@@ -16,17 +16,18 @@
             <a class="btn" href="Projects.html">Projects</a>
             <a class="btn" href="IT.html">IT Experience</a>
             <a class="btn" href="CV.html">Curriculum Vitae</a>
+            <a class="btn" href="contactme.html">Contact me</a>
         </div>
-        <div> 
+        <div>    <!--This displays and underlines the information on the page-->
             <u style="color: ivory;"><h3 style="margin-left: 25rem; margin-right: 25rem;">Completed projects</h3></u>
             <h4 style="margin-left: 25rem; margin-right: 25rem;">
                 <p>While studying for my degree, I have familiarised myself with the following technologies.
-                   The experience indicates rhe level of comfort I have with the technologies and not the certifiction
+                   The experience indicates the level of comfort I have with the technologies and not the certifiction
                    level. Don't forget to find the weather in my area below.</p>
             </h4>          
-            <table class="myOtherTable" style="margin-left: 40rem; margin-right: 40rem">
+            <table class="experienceTable" style="margin-left: 40rem; margin-right: 40rem">
             <tr>
-            <th>Technology</th><th>Experence</th>
+            <th>Technology</th><th>Experence</th><!--This creates a table with information-->
             </tr>
             <tr>
             <td>C++</td><td><img src="Full Star.png" style="width: 30px; height: 30px"><img src="Full Star.png" style="width: 30px; height: 30px"></td>
@@ -78,6 +79,7 @@
             </tr>
             </table>    
         </div>
+        <!--This displays the current weather in the Potcheftroom area received via the JavaScript file-->
         <div >
             <h4 style="text-align: center">The current weather is Potchefstroom is: 
             <h4 id="weather" style="text-align: center; color: navy;" ></h4>
